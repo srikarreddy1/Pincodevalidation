@@ -1,6 +1,6 @@
 #!/bin/bash -x
    
-   #restrict the alphabets
+   #restrict the alphabets and special charecters
    echo "enter the pattern"
    read pattern
    pinpat="^[0-9]{6}$"
