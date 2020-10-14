@@ -1,0 +1,11 @@
+#!/bin/bash -x
+
+   echo "enter the pattern"
+   read pattern
+   pinpat="^[0-9]{6}$"
+   if [[ $pattern =~ $pinpat ]]
+   then
+   echo "valid"
+   else
+   echo "invalid"
+   fi
