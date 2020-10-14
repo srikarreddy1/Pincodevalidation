@@ -1,9 +1,10 @@
 #!/bin/bash -x
    
    #restrict the alphabets and special charecters
+   # 400 444 is also valid along with 400444
    echo "enter the pattern"
    read pattern
-   pinpat="^[0-9]{6}$"
+   pinpat="^[0-9]{3}[ ]?[0-9]{3}$"
    if [[ $pattern =~ $pinpat ]]
    then
    echo "valid"
